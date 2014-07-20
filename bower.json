@@ -1,0 +1,19 @@
+{
+    "name": "happy-birthday-maujor",
+    "version": "0.0.0",
+    "description": "Happy Birthday Dinossauro Maujor with Custom Element",
+    "license": "MIT",
+    "main": "dist/happy-birthday-maujor.html",
+    "keywords": [
+        "polymer",
+        "web-components"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#~0.2.3"
+    }
+}

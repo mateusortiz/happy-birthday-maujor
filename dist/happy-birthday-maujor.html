@@ -1,0 +1,35 @@
+<!-- Import Polymer -->
+<link rel="import" href="../app/../polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="happy-birthday-maujor" attributes="sound">
+    <template>
+        <img src="dino.png" alt="Maujor">
+
+        <style>
+            :host {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -360px;
+                margin-top: -270px;
+            }
+        </style>
+    </template>
+
+    <script>
+        Polymer('happy-birthday-maujor', {
+            // Fires when the "<polymer-element>" has been fully prepared
+            ready: function() {
+                var sound = this.getAttribute('sound');
+
+                if(sound == 'on') {
+                    document.querySelector('audio').play()
+                } else {
+                    document.querySelector('audio').pause();
+                }
+            }
+        });
+    </script>
+
+</polymer-element>

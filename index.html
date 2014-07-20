@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;happy-birthday-maujor&gt;</title>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="bower_components/platform/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/happy-birthday-maujor.html">
+
+    <!-- Importing Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <h1>Feliz Aniversario Maujor</h1>
+
+    <!-- Using Custom Elements -->
+    <happy-birthday-maujor sound="on"></happy-birthday-maujor>
+
+
+    <audio>
+        <source src="assets/Happy-Birthday.mp3" type="audio/mp3"></source>
+        <source src="assets/Happy-Birthday.ogg" type="audio/ogg"></source>
+    </audio>
+
+    <style>
+        h1 {
+            color: #2ecc71;
+            font: 40px 'Lato', sans-serif;
+            text-align: center;
+        }
+    </style>
+
+</body>
+</html>
